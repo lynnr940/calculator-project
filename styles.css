@@ -88,10 +88,12 @@ button, .display-container {
 
 button{
     transition:all .2s ease-in-out;
-}
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 900;
+  }
 
 button:focus{
     background-color:rgb(99, 164, 157);
-    transform:translate(6px,1%);
+    transform:translate(12px,6px);
     
 }
