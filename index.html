@@ -4,89 +4,95 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator Project</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class=calculator-container>
-    <div class="calculator">
-      <div class="display">
-        <div class="display-container">
-          <div class="upper"></div>
-          <div class="lower"></div>
+    <div class="header-container">
+      <h1 class="loader">CALCULATE!</h1>
+    </div>
+    <div class="calculator-container">
+      <div class="calculator">
+        <div class="display">
+          <div class="display-container">
+            <div class="upper"></div>
+            <div class="lower"></div>
+          </div>
         </div>
-      </div>
-      <div class="row1">
-        <div class="button-container">
-          <button id="AC" value="AC">AC</button>
+        <div class="row1">
+          <div class="button-container">
+            <button id="AC" value="AC">AC</button>
+          </div>
+          <div class="button-container">
+            <button id="DEL" value="DEL">DEL</button>
+          </div>
+          <div class="button-container">
+            <button class="operator" id="%" value="%">%</button>
+          </div>
+          <div class="button-container">
+            <button class="operator" id="+" value="+">+</button>
+          </div>
         </div>
-        <div class="button-container">
-          <button id="DEL" value="DEL">DEL</button>
+        <div class="row2">
+          <div class="button-container">
+            <button class="number" id="1" value="1">1</button>
+          </div>
+          <div class="button-container">
+            <button id="2" class="number" value="2">2</button>
+          </div>
+          <div class="button-container">
+            <button id="3" class="number" value="3">3</button>
+          </div>
+          <div class="button-container">
+            <button id="X" class="operator" value="×">X</button>
+          </div>
         </div>
-        <div class="button-container">
-          <button class="operator" id="%" value="%">%</button>
+        <div class="row3">
+          <div class="button-container">
+            <button class="number" id="4" value="4">4</button>
+          </div>
+          <div class="button-container">
+            <button class="number" id="5" value="5">5</button>
+          </div>
+          <div class="button-container">
+            <button class="number" id="6" value="6">6</button>
+          </div>
+          <div class="button-container">
+            <button class="operator" id="/" value="÷">/</button>
+          </div>
         </div>
-        <div class="button-container">
-          <button class="operator" id="+" value="+">+</button>
+        <div class="row4">
+          <div class="button-container">
+            <button class="number" id="7" value="7">7</button>
+          </div>
+          <div class="button-container">
+            <button class="number" id="8" value="8">8</button>
+          </div>
+          <div class="button-container">
+            <button class="number" id="9" value="9">9</button>
+          </div>
+          <div class="button-container">
+            <button class="operator" id="-" value="−">-</button>
+          </div>
         </div>
-      </div>
-      <div class="row2">
-        <div class="button-container">
-          <button class="number" id="1" value="1">1</button>
-        </div>
-        <div class="button-container">
-          <button id="2" class="number" value="2">2</button>
-        </div>
-        <div class="button-container">
-          <button id="3" class="number" value="3">3</button>
-        </div>
-        <div class="button-container">
-          <button id="X" class="operator" value="×">X</button>
-        </div>
-      </div>
-      <div class="row3">
-        <div class="button-container">
-          <button class="number" id="4" value="4">4</button>
-        </div>
-        <div class="button-container">
-          <button class="number" id="5" value="5">5</button>
-        </div>
-        <div class="button-container">
-          <button class="number" id="6" value="6">6</button>
-        </div>
-        <div class="button-container">
-          <button class="operator" id="/" value="÷">/</button>
-        </div>
-      </div>
-      <div class="row4">
-        <div class="button-container">
-          <button class="number" id="7" value="7">7</button>
-        </div>
-        <div class="button-container">
-          <button class="number" id="8" value="8">8</button>
-        </div>
-        <div class="button-container">
-          <button class="number" id="9" value="9">9</button>
-        </div>
-        <div class="button-container">
-          <button class="operator" id="-" value="−">-</button>
-        </div>
-      </div>
-      <div class="row5">
-        <div class="button-container">
-          <button class="number" id="0" value="0">0</button>
-        </div>
-        <div class="button-container">
-          <button class="number" id="." value=".">.</button>
-        </div>
-        <div class="button-container equals-container">
-          <button class="equals" id="=" value="=">=</button>
+        <div class="row5">
+          <div class="button-container">
+            <button class="number" id="0" value="0">0</button>
+          </div>
+          <div class="button-container">
+            <button class="number" id="." value=".">.</button>
+          </div>
+          <div class="button-container equals-container">
+            <button class="equals" id="=" value="=">=</button>
+          </div>
         </div>
       </div>
     </div>
-</div>
   </body>
 </html>
