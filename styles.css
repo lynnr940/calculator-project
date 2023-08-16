@@ -42,16 +42,25 @@ body {
 }
 
 .calculator {
-  background-color: pink;
+  background: rgb(235, 162, 237);
+  background: linear-gradient(
+    54deg,
+    rgba(235, 162, 237, 1) 0%,
+    rgba(255, 173, 251, 1) 51%,
+    rgba(7, 213, 255, 1) 100%
+  );
   display: flex;
   flex: wrap;
   flex-direction: column;
   width: 400px;
-  height: 680px;
+  height: 690px;
   padding: 10px;
   padding-top: 20px;
   border-radius: 12px;
   margin-left: -10px;
+  border-style:ridge;
+  border-width: 8px;
+  border-color: rgb(166, 147, 183);
 }
 
 .display {
@@ -118,6 +127,7 @@ button,
 }
 .equals {
   width: 168px;
+  background-color: rgb(242, 126, 236);
 }
 
 button {
@@ -130,4 +140,15 @@ button {
 button:focus {
   background-color: rgb(99, 164, 157);
   transform: translate(12px, 6px);
+}
+
+.operator,
+.zero,
+.period {
+  background-color: rgb(175, 250, 99);
+}
+
+#AC,
+#DEL {
+  background-color: rgb(242, 126, 236);
 }
