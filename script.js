@@ -43,7 +43,18 @@ AC.addEventListener("click", function () {
   displayUpper.textContent = "";
 });
 
-DEL.addEventListener("click", function () {});
+DEL.addEventListener("click", function () {
+  if (!num2 == ""){
+    num2 = num2.substring(0,num2.length-1);
+    displayLower.textContent = displayLower.textContent.substring(0,displayLower.textContent.length-1);
+  } else if (!currentOperator == ""){
+    currentOperator = currentOperator.substring(0,currentOperator.length-1);
+    displayLower.textContent = displayLower.textContent.substring(0,displayLower.textContent.length-1);
+  } else if (!num1 == ""){
+    num1 = num1.substring(0,num1.length-1);
+    displayLower.textContent = displayLower.textContent.substring(0,displayLower.textContent.length-1);
+  }
+});
 
 EQUALS.addEventListener("click", function () {
   console.log(operate(num1, currentOperator, num2));
