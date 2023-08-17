@@ -66,22 +66,27 @@ EQUALS.addEventListener("click", function () {
 });
 
 function add(num1, num2) {
-  return num1 + num2;
+  return roundNumber(num1 + num2);
 }
 
 function subtract(num1, num2) {
-  return num1 - num2;
+  return roundNumber(num1 - num2);
 }
 
 function divide(num1, num2) {
-  return num1 / num2;
+  return roundNumber(num1 / num2);
 }
 function multiply(num1, num2) {
-  return num1 * num2;
+  return roundNumber(num1 * num2);
 }
 function getRemainder(num1, num2) {
   return num1 % num2;
 }
+
+function roundNumber(num) {
+  return Math.round(num*100000)/100000;
+}
+
 
 function operate(a, currentOperator, b) {
   console.log([a, currentOperator, b]);
