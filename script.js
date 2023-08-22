@@ -44,15 +44,24 @@ AC.addEventListener("click", function () {
 });
 
 DEL.addEventListener("click", function () {
-  if (!num2 == ""){
-    num2 = num2.substring(0,num2.length-1);
-    displayLower.textContent = displayLower.textContent.substring(0,displayLower.textContent.length-1);
-  } else if (!currentOperator == ""){
-    currentOperator = currentOperator.substring(0,currentOperator.length-1);
-    displayLower.textContent = displayLower.textContent.substring(0,displayLower.textContent.length-1);
-  } else if (!num1 == ""){
-    num1 = num1.substring(0,num1.length-1);
-    displayLower.textContent = displayLower.textContent.substring(0,displayLower.textContent.length-1);
+  if (!num2 == "") {
+    num2 = num2.substring(0, num2.length - 1);
+    displayLower.textContent = displayLower.textContent.substring(
+      0,
+      displayLower.textContent.length - 1
+    );
+  } else if (!currentOperator == "") {
+    currentOperator = currentOperator.substring(0, currentOperator.length - 1);
+    displayLower.textContent = displayLower.textContent.substring(
+      0,
+      displayLower.textContent.length - 1
+    );
+  } else if (!num1 == "") {
+    num1 = num1.substring(0, num1.length - 1);
+    displayLower.textContent = displayLower.textContent.substring(
+      0,
+      displayLower.textContent.length - 1
+    );
   }
 });
 
@@ -84,9 +93,8 @@ function getRemainder(num1, num2) {
 }
 
 function roundNumber(num) {
-  return Math.round(num*100000)/100000;
+  return Math.round(num * 100000) / 100000;
 }
-
 
 function operate(a, currentOperator, b) {
   console.log([a, currentOperator, b]);
@@ -102,7 +110,7 @@ function operate(a, currentOperator, b) {
     case "%":
       return getRemainder(a, b);
     case "÷":
-      if (b === 0) return null;
+      if (b === 0) return "THAT DOESNT WORK! NO!";
       else return divide(a, b);
     default:
       return null;
